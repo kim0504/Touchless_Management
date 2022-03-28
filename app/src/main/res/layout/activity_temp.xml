@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="0">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tvReceiveData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Receive"
+
+                    app:layout_constraintStart_toStartOf="@+id/btnSendData"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSendData" />
+                <Button
+                    android:id="@+id/turn_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_shape"
+                    android:text="주문 페이지"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/Clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Clock"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="블루투스"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_shape"
+                    app:layout_constraintStart_toStartOf="@+id/tvBluetoothStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBluetoothStatus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/line">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/order_num0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView0"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selected"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/order_num1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView2"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView3"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/line"
+            tools:context=".ListViewActivity">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView4"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView5"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView6"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/order_num7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="주문"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/black"/>
+                <View
+                    android:background="#adadad"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"></View>
+                <ListView
+                    android:id="@+id/listView7"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
