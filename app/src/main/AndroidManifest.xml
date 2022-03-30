@@ -15,21 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bluetooth">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
 
-        </activity>
-        <activity
-            android:name=".OrderActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ListActivity"
-            android:exported="true">
-
-        </activity>
         <activity
             android:name=".TempActivity"
             android:exported="true">

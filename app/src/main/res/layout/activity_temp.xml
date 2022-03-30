@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Receive"
-
+                    android:visibility="gone"
                     app:layout_constraintStart_toStartOf="@+id/btnSendData"
                     app:layout_constraintTop_toBottomOf="@+id/btnSendData" />
                 <Button
@@ -85,12 +85,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_weight="1"
-            android:background="@drawable/line">
+            android:layout_weight="1">
             <LinearLayout
+                android:id="@+id/layout0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/line"
+                android:background="@drawable/selected"
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
@@ -99,23 +99,34 @@
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView0"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/selected"/>
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview0"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/layout1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
@@ -127,75 +138,111 @@
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView1"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/layout2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num2"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView2"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/layout3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num3"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView3"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -207,112 +254,158 @@
             android:background="@drawable/line"
             tools:context=".ListViewActivity">
             <LinearLayout
+                android:id="@+id/layout4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num4"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView4"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
-
             <LinearLayout
+                android:id="@+id/layout5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num5"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView5"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
-
             <LinearLayout
+                android:id="@+id/layout6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num6"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView6"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
-
             <LinearLayout
+                android:id="@+id/layout7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/line"
                 android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_weight="1">
                 <TextView
                     android:id="@+id/order_num7"
                     android:layout_width="fill_parent"
                     android:layout_height="35dp"
                     android:text="주문"
                     android:gravity="center"
-                    android:layout_margin="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
                     android:textColor="@color/black"/>
                 <View
                     android:background="#adadad"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="2dp"></View>
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"></View>
                 <ListView
                     android:id="@+id/listView7"
-                    android:layout_margin="2dp"
+                    android:layout_margin="3dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/request_textview7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
