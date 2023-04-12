@@ -3,6 +3,7 @@
 </p>
 
 ## Touchless 주문 관리 시스템 개발
+- **기간**  : 2023.02 ~ 2023.03
 - **주제**  : 식당에서 스크린 터치 없이 주문 현황을 관리할 수 있는 touchless 주문 관리 시스템 개발
 - **유형**  : 앱 개발
 - **개발**  : Android studio, Arduino, Firebase, ZS-040 (Bluetooth module), APDS-9960 (제스처 센서)
